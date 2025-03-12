@@ -22,11 +22,19 @@ const initialFriends = [
   },
 ];
 
+function Button({ children, onClick }) {
+  return (
+    <button className="button" onClick={onClick}>
+      {children}
+    </button>
+  );
+}
+
 export default function App() {
   const [showAddFriend, setShowFriend] = useState(false);
 
   function handleShowAddFriend() {
-    setShowFriend(!showAddFriend);
+    setShowFriend((show) => !show);
   }
 
   return (
@@ -80,13 +88,7 @@ function Friend({ friend }) {
   );
 }
 
-function Button({ children, onClick }) {
-  return (
-    <button className="button" onClick={onClick}>
-      {children}
-    </button>
-  );
-}
+
 
 function FormAddFriend() {
   return (
@@ -101,6 +103,7 @@ function FormAddFriend() {
     </form>
   );
 }
+
 
 function FormSplitBill() {
   return (
