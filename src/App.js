@@ -138,7 +138,7 @@ function FormAddFriend({ onAddFriend }) {
     };
     onAddFriend(newFriend);
 
-    // After The submit The form then the image is reset and name is blank
+    // After The submit The form name is reset and image are also
     setName("");
     setImage("https://i.pravatar.cc/48");
   }
