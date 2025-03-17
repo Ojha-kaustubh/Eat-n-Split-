@@ -222,7 +222,6 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
         <option value="user">You</option>
         <option value="friend">{selectedFriend.name}</option>
       </select>
-
       <Button>Split Bill</Button>
     </form>
   );
